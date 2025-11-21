@@ -155,10 +155,13 @@ export default function App() {
   // Renderers
   const renderInput = () => (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 animate-float">
-      <h1 className="font-magic text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-b from-purple-100 to-purple-500 mb-2 glow-text text-center">
+      <h1 className="font-magic text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-b from-purple-100 to-purple-500 mb-6 glow-text text-center">
         TIME POEM
       </h1>
-      <p className="text-purple-300/60 font-poetic italic mb-10 text-lg tracking-wide">时间之诗</p>
+      
+      <p className="text-purple-200/70 font-poetic italic text-lg md:text-xl mb-12 tracking-wide text-center max-w-2xl animate-fade-in leading-relaxed">
+        输入一个关键词，展示它过去、现在与未来的时间之诗
+      </p>
       
       <form onSubmit={handleSearch} className="w-full max-w-md relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
